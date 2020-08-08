@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dice Roll</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dice_roll.css">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        
+        <div class="backgrnd clearfix">
+            <div class="player-0-panel active">
+                <div class="player-turns-0" style="display: block;">Turns left: <span id="turns-0">5</span></div>
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+            </div>
+    
+            <div class="player-1-panel">
+                <div class="player-turns-1" style="display: block;">Turns left: <span id="turns-1">5</span></div>
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+            </div>
+    
+    
+            <div class="dice">
+                <ol class="die-list die-list-0 even-roll" data-roll="1" id="die-0">
+                    <li class="die-item" data-side="1">
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="2">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="3">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="4">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="5">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="6">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                </ol>
+                <ol class="die-list die-list-0 odd-roll" data-roll="1" id="die-1">
+                    <li class="die-item" data-side="1">
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="2">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="3">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="4">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="5">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="die-item" data-side="6">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                </ol>
+            </div>
+    
+    
+            <button class="btn-new">
+                <i class="ion-ios-plus-outline"></i> New Game
+            </button>
+            <button class="btn-roll" id="roll-button">
+                <i class="ion-ios-loop"></i> Dice Roll
+            </button>
+        </div>
+        <script src="./dice_roll.js"></script>
+    </body>
+</html>
